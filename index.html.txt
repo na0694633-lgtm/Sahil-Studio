@@ -1,0 +1,102 @@
+‎<!DOCTYPE html>
+‎<html lang="en">
+‎<head>
+‎<meta charset="UTF-8">
+‎<meta name="viewport" content="width=device-width, initial-scale=1.0">
+‎<title>Sahil Studio | Video Editing & Design</title>
+‎<meta name="author" content="Intsam Sahil">
+‎<style>
+‎:root {
+‎    --primary-color: #ff4757;
+‎    --dark-bg: #1e272e;
+‎    --light-bg: #f1f2f6;
+‎    --text-color: #2f3542;
+‎    --white: #ffffff;
+‎}
+‎* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+‎body { line-height:1.6; color: var(--text-color);}
+‎nav { background-color: var(--dark-bg); color: var(--white); padding:1rem 5%; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:1000;}
+‎.logo { font-size:1.5rem; font-weight:bold; color: var(--primary-color); text-transform:uppercase; letter-spacing:2px;}
+‎.nav-links a { color: var(--white); text-decoration:none; margin-left:20px; font-weight:500; transition: color 0.3s;}
+‎.nav-links a:hover { color: var(--primary-color);}
+‎.hero { background: linear-gradient(rgba(30,39,46,0.9), rgba(30,39,46,0.8)), url('https://images.unsplash.com/photo-1574717024653-61fd2cf4d44c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size:cover; background-position:center; height:90vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; color: var(--white); padding:0 20px;}
+‎.hero h1 { font-size:3.5rem; margin-bottom:20px;}
+‎.hero span { color: var(--primary-color);}
+‎.hero p { font-size:1.2rem; max-width:600px; margin-bottom:30px;}
+‎.btn { background-color: var(--primary-color); color: var(--white); padding:12px 30px; text-decoration:none; border-radius:5px; font-weight:bold; transition: transform 0.3s;}
+‎.btn:hover { transform: scale(1.05); background-color: #e84118;}
+‎.services { padding:80px 5%; background-color: var(--light-bg); text-align:center;}
+‎.section-title { font-size:2.5rem; margin-bottom:50px; color: var(--dark-bg);}
+‎.service-container { display:flex; flex-wrap:wrap; justify-content:center; gap:30px;}
+‎.service-card { background: var(--white); padding:30px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); width:300px; transition:transform 0.3s;}
+‎.service-card:hover { transform: translateY(-10px);}
+‎.service-icon { font-size:3rem; margin-bottom:20px; color: var(--primary-color);}
+‎.about { padding:80px 5%; display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:50px;}
+‎.about-text { flex:1; min-width:300px;}
+‎.about-text h2 { font-size:2.5rem; margin-bottom:20px;}
+‎.owner-badge { background-color: var(--dark-bg); color: var(--white); padding:10px 20px; border-radius:50px; display:inline-block; margin-top:10px; font-weight:bold;}
+‎.contact { background-color: var(--dark-bg); color: var(--white); padding:80px 5%; text-align:center;}
+‎.contact-info { display:flex; flex-wrap:wrap; justify-content:center; gap:40px; margin-top:40px;}
+‎.contact-item { background: rgba(255,255,255,0.1); padding:20px 40px; border-radius:10px; min-width:250px;}
+‎.contact-item h3 { color: var(--primary-color); margin-bottom:10px;}
+‎.contact-item a { color: var(--white); text-decoration:none; font-size:1.1rem;}
+‎footer { background-color:#111; color:#777; text-align:center; padding:20px;}
+‎@media (max-width:768px) { .hero h1 { font-size:2.5rem;} .nav-links { display:none;} .logo { font-size:1.2rem;} }
+‎</style>
+‎</head>
+‎<body>
+‎
+‎<nav>
+‎    <div class="logo">Sahil Studio</div>
+‎    <div class="nav-links">
+‎        <a href="#services">Services</a>
+‎        <a href="#about">About</a>
+‎        <a href="#contact">Contact</a>
+‎    </div>
+‎</nav>
+‎
+‎<section class="hero">
+‎    <h1>Professional <span>Video Editing</span> & <br>Graphic Design</h1>
+‎    <p>Transforming raw footage into viral content. Specializing in YouTube, Instagram Reels, and custom Logo Design.</p>
+‎    <a href="#contact" class="btn">Hire Me Now</a>
+‎</section>
+‎
+‎<section id="services" class="services">
+‎    <h2 class="section-title">My Services</h2>
+‎    <div class="service-container">
+‎        <div class="service-card"><div class="service-icon">🎬</div><h3>YouTube Editing</h3><p>High-quality cuts, transitions, color grading, and sound design to keep your audience engaged.</p></div>
+‎        <div class="service-card"><div class="service-icon">📱</div><h3>Instagram Reels</h3><p>Trendy, fast-paced edits with captions and effects optimized for social media growth.</p></div>
+‎        <div class="service-card"><div class="service-icon">🎨</div><h3>Logo Design</h3><p>Unique, professional logos that define your brand identity and stand out from the crowd.</p></div>
+‎    </div>
+‎</section>
+‎
+‎<section id="about" class="about">
+‎    <div class="about-text">
+‎        <h2>About The Studio</h2>
+‎        <p>Welcome to Sahil Studio. We are dedicated to helping creators and businesses grow through visual storytelling. Whether you need a full YouTube video edited or a brand new logo, we deliver quality work on time.</p>
+‎        <div class="owner-badge">Owner: Intsam Sahil</div>
+‎    </div>
+‎</section>
+‎
+‎<section id="contact" class="contact">
+‎    <h2 class="section-title" style="color:white;">Get In Touch</h2>
+‎    <p>Ready to start your project? Contact me today!</p>
+‎    <div class="contact-info">
+‎        <div class="contact-item">
+‎            <h3>📞 Call / WhatsApp</h3>
+‎            <a href="tel:923218980597">+92 321 8980597</a>
+‎        </div>
+‎        <div class="contact-item">
+‎            <h3>📧 Email Me</h3>
+‎            <a href="mailto:intsamsahil4@gmail.com">intsamsahil4@gmail.com</a>
+‎        </div>
+‎    </div>
+‎</section>
+‎
+‎<footer>
+‎    <p>&copy; 2023 Sahil Studio. All Rights Reserved.</p>
+‎</footer>
+‎
+‎</body>
+‎</html>
+‎
